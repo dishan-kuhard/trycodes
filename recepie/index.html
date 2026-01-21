@@ -13,6 +13,18 @@
     </header>
     
     <main>
+        <!-- Search Bar -->
+        <section class="search-section">
+            <input 
+                type="text" 
+                id="search-input" 
+                class="search-bar" 
+                placeholder="🔍 Search recipes by title or ingredients..."
+                autocomplete="off"
+            >
+        </section>
+
+        <!-- Filter & Sort Controls -->
         <section class="controls">
             <div class="filters">
                 <button data-filter="all">All Recipes</button>
@@ -20,6 +32,7 @@
                 <button data-filter="medium">Medium Recipes</button>
                 <button data-filter="hard">Hard Recipes</button>
                 <button data-filter="quick">Quick Recipes (Under 30 minutes)</button>
+                <button data-filter="favorites">❤️ Favorites</button>
             </div>
             <div class="sorters">
                 <button data-sort="name">Sort: Name (A–Z)</button>
@@ -27,6 +40,12 @@
             </div>
         </section>
 
+        <!-- Recipe Counter -->
+        <div class="recipe-counter">
+            <p id="recipe-count">Showing 0 of 0 recipes</p>
+        </div>
+
+        <!-- Recipe Container -->
         <div id="recipe-container">
             <!-- Recipe cards will be rendered here by JavaScript -->
         </div>
