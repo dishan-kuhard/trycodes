@@ -388,14 +388,3 @@ main {
         font-size: 1rem;
     }
 }
-        flex-direction: column;
-    }
-
-    .btn-expand {
-        width: 100%;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-}
